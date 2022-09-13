@@ -1,0 +1,35 @@
+<!-- <div class="mainbody">
+<div class="sidenav">
+    <a class="nav-link" routerLink="/Employee" >Employee</a>
+    <a class="nav-link" routerLink="/Dashbord">Student</a>
+    <a class="nav-link" routerLink="/Dashbord">Student</a>
+    <a class="nav-link" routerLink="/Dashbord">Student</a>
+
+
+  </div>
+
+<mat-card class="body">
+    <mat-card-title>Dashbord</mat-card-title>
+    <mat-card-subtitle>Start</mat-card-subtitle>
+    <mat-card-actions>
+    </mat-card-actions>
+</mat-card>
+
+
+</div> -->
+
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+    
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button mat-icon-button (click)="drawer.toggle()" aria-label="Example icon-button with a menu">
+      <mat-icon>more_vert</mat-icon>Dashbord
+    </button>
+    
+  </div>
+
+</mat-drawer-container>

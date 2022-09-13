@@ -1,0 +1,175 @@
+{
+  "addemployee": [
+    {
+      "firstName": "Romin",
+      "lastName": "Iraniret",
+      "jobTitleName": "Developer",
+      "email": "romin.k.irani@gmail.com",
+      "phoneNumber": "408-1234567",
+      "salary": "54000",
+      "id": 1
+    },
+    {
+      "firstName": "Neil",
+      "lastName": "Irani",
+      "jobTitleName": "Developer",
+      "phoneNumber": "408-1111111",
+      "email": "neilrirani@gmail.com",
+      "salary": "50000",
+      "id": 2
+    },
+    {
+      "firstName": "Tom",
+      "lastName": "Hanks",
+      "jobTitleName": "Program Directory",
+      "phoneNumber": "408-2222222",
+      "email": "tomhanks@gmail.com",
+      "salary": "50000",
+      "id": 3
+    },
+    {
+      "firstName": "Dinesh",
+      "lastName": "Deoyal",
+      "jobTitleName": "Developer",
+      "email": "das@gmail.com",
+      "phoneNumber": "5789654214",
+      "salary": "25678",
+      "id": 4
+    },
+    {
+      "firstName": "Dinesh",
+      "lastName": "Deoyal",
+      "jobTitleName": "Developer",
+      "email": "das@gmail.com",
+      "phoneNumber": "5789654214",
+      "salary": "25678",
+      "id": 5
+    },
+    {
+      "firstName": "Dinesh",
+      "lastName": "Deoyal",
+      "jobTitleName": "Developer",
+      "email": "das@gmail.com",
+      "phoneNumber": "5789654214",
+      "salary": "25678",
+      "id": 6
+    },
+    {
+      "firstName": "Dinesh",
+      "lastName": "Deoyal",
+      "jobTitleName": "Developer",
+      "email": "das@gmail.com",
+      "phoneNumber": "5789654214",
+      "salary": "25678",
+      "id": 7
+    },
+    {
+      "firstName": "Dinesh",
+      "lastName": "Deoyal",
+      "jobTitleName": "Developer",
+      "email": "das@gmail.com",
+      "phoneNumber": "5789654214",
+      "salary": "25678",
+      "id": 8
+    },
+    {
+      "firstName": "Dinesh",
+      "lastName": "Deoyal",
+      "jobTitleName": "Developer",
+      "email": "das@gmail.com",
+      "phoneNumber": "5789654214",
+      "salary": "25678",
+      "id": 9
+    },
+    {
+      "firstName": "Dinesh",
+      "lastName": "Deoyal",
+      "jobTitleName": "Developer",
+      "email": "das@gmail.com",
+      "phoneNumber": "5789654214",
+      "salary": "25678",
+      "id": 10
+    },
+    {
+      "firstName": "Hazibul",
+      "lastName": "Islam",
+      "jobTitleName": "System Administrator",
+      "email": "hazibul@1123.com",
+      "phoneNumber": "1234567890",
+      "salary": "40002",
+      "id": 11
+    },
+    {
+      "firstName": "sdgfghj",
+      "lastName": "asdfghj",
+      "jobTitleName": "Designer",
+      "email": "admin@gmail.com",
+      "phoneNumber": "1234567",
+      "salary": "233855",
+      "id": 12
+    },
+    {
+      "firstName": "mki",
+      "lastName": "mouse",
+      "jobTitleName": "System Administrator",
+      "email": "mki@fgh.com",
+      "phoneNumber": "23456787654",
+      "salary": "52000",
+      "id": 13
+    }
+  ],
+  "register": [
+    {
+      "fullname": "partha maity",
+      "email": "parthamaity32@gmail.com",
+      "mobile": "1234567890",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "fullname": "Example Data",
+      "email": "Example@123.com",
+      "mobile": "0000000001",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "fullname": "Admin",
+      "email": "admin@gmail.com",
+      "mobile": "12345678901",
+      "password": "12345",
+      "id": 7
+    },
+    {
+      "fullname": "partha maity",
+      "email": "hello@www.com",
+      "mobile": "1234567890",
+      "password": "12345",
+      "id": 8
+    },
+    {
+      "fullname": "Papu Maity",
+      "email": "papug@hko.moi",
+      "mobile": "6767565645",
+      "password": "12345",
+      "id": 9
+    },
+    {
+      "fullname": "ABCD M",
+      "email": "abcd@gmail.com",
+      "mobile": "1234567890",
+      "password": "12345",
+      "id": 10
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

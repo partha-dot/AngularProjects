@@ -1,0 +1,58 @@
+<button mat-icon-button class="close-button" [mat-dialog-close]="true">
+  <mat-icon class="close-icon" color="warn">close</mat-icon>
+</button>
+
+<h2 mat-dialog-title>Add New Employee</h2>
+<div mat-dialog-content class="mat-typography">
+
+   <form [formGroup]="employeeform">
+    <div >
+      
+
+        <mat-form-field appearance="fill">
+          <mat-label>Enter First Name:</mat-label>
+          <input matInput  formControlName="firstName" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Last Name:</mat-label>
+          <input matInput  formControlName="lastName" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Select Job Title</mat-label>
+          <mat-select [(value)]="jobTitle" formControlName="jobTitleName">
+            <mat-option>None</mat-option>
+            <mat-option value="Program Directory">Program Directory</mat-option>
+            <mat-option value="Developer">Developer</mat-option>
+            <mat-option value="Designer">Designer</mat-option>
+            <mat-option value="Devops Engineer">Devops Engineer</mat-option>
+            <mat-option value="System Administrator">System Administrator</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+       
+        <mat-form-field appearance="fill">
+            <mat-label>Enter Email:</mat-label>
+            <input matInput  formControlName="email" required>
+          </mat-form-field>
+          <!-- <mat-label>Choose Gender</mat-label>
+          <mat-radio-group aria-label="Select Gender" formControlName="gender"><br>
+            <mat-radio-button value="male" style="margin-right:10px;">Male</mat-radio-button>
+            <mat-radio-button value="female"style="margin-right:10px;">Female</mat-radio-button>
+            <mat-radio-button value="others">Others</mat-radio-button>
+          </mat-radio-group> -->
+          <mat-form-field appearance="fill">
+            <mat-label>Enter Phone Number:</mat-label>
+            <input matInput  formControlName="phoneNumber" required>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter monthly Salary:</mat-label>
+            <input matInput placeholder="50,000" formControlName="salary" required [(ngModel)]="lpa">
+          </mat-form-field>
+          <p>{{lpa*12 |currency:'INR'}}&nbsp;&nbsp;per year</p>
+          
+          <button mat-raised-button color="accent" (click)="addEmployee()">{{ActionBtn}}</button>
+          
+      </div>
+   </form>
+
+</div>

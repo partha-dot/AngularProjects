@@ -1,0 +1,27 @@
+<app-topnav></app-topnav>
+<div class=" col-md-6 center" ><br><br>
+ <form [formGroup]="registerFrom" (ngSubmit)="userReg()">
+  <h1>Create an Account</h1>
+  <mat-form-field appearance="fill" style="width: 500px;">
+    <mat-label>Full Name:</mat-label>
+    <input matInput formControlName="fullname" required>
+  </mat-form-field>
+  <mat-form-field appearance="fill" style="width: 500px;">
+      <mat-label>Email:</mat-label>
+      <input matInput formControlName="email" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill" style="width: 500px;">
+      <mat-label>Mobile</mat-label>
+      <input matInput formControlName="mobile" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill" style="width: 500px;">
+      <mat-label>Password:</mat-label>
+      <input matInput formControlName="password" required>
+    </mat-form-field><br>
+  <a routerLink="/Login">Already have an account</a>
+    
+    <br><br>
+    <button mat-raised-button color="warn" type="submit">Register</button>
+ </form>
+  
+</div><br><br>

@@ -1,0 +1,52 @@
+
+      <div>
+        <img src="../../assets/logo.png" alt="logo" width="150" height="70" style="position:absolute">
+       
+       
+    </div>
+  <p>
+    <mat-toolbar class="menubar">
+     <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" >
+      <mat-icon>menu</mat-icon>
+    </button> -->
+    <ul class="nav" style="text-align: center; margin-left: 200px;" *ngIf="loggedin()">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" routerLink="/Dashbord" >Dashbord</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Employee" >Employee</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Dashbord">Student</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Login" >Add to cart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Dashbord">Orderd</a>
+      </li>
+     </ul>
+    <span class="example-spacer"></span>
+    <div class="top">
+    <button mat-icon-button [routerLink]="'/Login'" style="margin-right:30px;" *ngIf="!loggedin()">
+        <mat-icon>person</mat-icon>
+        <mat-label >Login</mat-label>
+    </button>
+  
+    <button mat-icon-button  [routerLink]="'/Register'" *ngIf="!loggedin()">
+        <mat-icon>person_add</mat-icon>
+        <mat-label>Register</mat-label>
+   </button>
+   
+   <button mat-icon-button  *ngIf="loggedin()" (click)="onLogout()">
+    <mat-icon>logout</mat-icon>
+    <mat-label>logout</mat-label>
+</button>
+
+    </div>
+  </mat-toolbar>
+  </p>
+ 
+   
+  

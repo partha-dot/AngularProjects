@@ -1,0 +1,19 @@
+<app-topnav></app-topnav>
+<div class="col-md-6 center" ><br><br>
+  <form [formGroup]="loginFrom" (ngSubmit)="login()">
+    
+  <h1>User Login</h1>
+  <mat-form-field appearance="fill" style="width: 500px;">
+    <mat-label>Username:</mat-label>
+    <input matInput formControlName="email">
+  </mat-form-field>
+  <mat-form-field appearance="fill" style="width: 500px;">
+    <mat-label>Password:</mat-label>
+    <input type="password" matInput formControlName="password">
+  </mat-form-field><br>
+  <a  routerLink="/Register">Don't have an account</a>
+  <br><br>
+  <button mat-raised-button color="warn" type="submit">Login</button>
+ 
+  </form>
+</div><br><br>
