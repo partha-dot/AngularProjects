@@ -7,6 +7,7 @@ import {Component} from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
+  
   durationInSeconds = 5;
   constructor(private http:HttpClient , private _snackBar: MatSnackBar) { }
   postEmployee(data:any){
@@ -23,6 +24,11 @@ export class ApiService {
     return this.http.delete<any>("http://localhost:3000/addemployee/"+id);
 
   }
+
+ 
+
+
+
 
 //mesagess-------------------------------------------------------------
  

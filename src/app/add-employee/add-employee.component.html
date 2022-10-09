@@ -46,9 +46,9 @@
           </mat-form-field>
           <mat-form-field appearance="fill">
             <mat-label>Enter monthly Salary:</mat-label>
-            <input matInput placeholder="50,000" formControlName="salary" required [(ngModel)]="lpa">
+            <input matInput placeholder="50,000" formControlName="salary" required >
           </mat-form-field>
-          <p>{{lpa*12 |currency:'INR'}}&nbsp;&nbsp;per year</p>
+         
           
           <button mat-raised-button color="accent" (click)="addEmployee()">{{ActionBtn}}</button>
           

@@ -20,16 +20,82 @@
 
 
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>Auto-resizing sidenav</p>
+  <mat-drawer #drawer class="example-sidenav" mode="side"opened="true">
+
+      <mat-card class="example-card">
+        <mat-card-title-group>
+          <!-- <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Small</mat-card-subtitle> -->
+          <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" style="border-radius:50px;">
+        </mat-card-title-group>
+        <mat-card-content>
+         <br><h4>Admin User</h4><hr>
+         <a class="nav-link" routerLink="/Employee" >Employee</a>
+          <a class="nav-link" routerLink="/Dashbord">Student</a>
+           <a class="nav-link" routerLink="/Dashbord">Student</a>
+            <a class="nav-link" routerLink="/Dashbord">Student</a>
+        </mat-card-content>
+      </mat-card>
+  
     
   </mat-drawer>
 
-  <div class="example-sidenav-content">
+  <div class="toggle">
     <button mat-icon-button (click)="drawer.toggle()" aria-label="Example icon-button with a menu">
-      <mat-icon>more_vert</mat-icon>My Dashbord
+      <mat-icon>menu</mat-icon>My Dashbord
     </button>
+    <span class="example-spacer"></span>
+
+    <mat-form-field class="example-full-width example-icon">
+      <span matPrefix> </span>
+      <input type="tel" matInput placeholder="Search" name= "search" >
+      <button matSuffix mat-button><mat-icon >search</mat-icon></button>
+      </mat-form-field>
+    <button mat-icon-button style="color: white;" aria-label="Example icon-button with share icon">
+      <mat-icon>mark_email_unread</mat-icon>
+    </button>
+    <button mat-icon-button style="color: white;" aria-label="Example icon-button with share icon">
+      <mat-icon>notifications</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" [matMenuTriggerFor]="menu">
+      <mat-icon>person</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Profile</button>
+      <button mat-menu-item (click)="onLogout()">Log Out</button>
+    </mat-menu>
+   
     
   </div>
-
+  <div class="quickview" >
+    <mat-grid-list cols="4" rowHeight="120px"  gutterSize="20px">
+      <mat-grid-tile style="border-radius: 45px;">1</mat-grid-tile>
+      <mat-grid-tile style="border-radius: 45px;">2</mat-grid-tile>
+      <mat-grid-tile style="border-radius: 45px;">3</mat-grid-tile>
+      <mat-grid-tile style="border-radius: 45px;">4</mat-grid-tile>
+    </mat-grid-list>
+    
+  </div>
+  <div class="nextview" >
+    <mat-grid-list cols="3" rowHeight="370px"  gutterSize="20px">
+      <mat-grid-tile colspan="2" style="border-radius: 45px;">
+      <img src="../../assets/chart1.png" class="chart">
+      </mat-grid-tile>
+      <mat-grid-tile style="border-radius: 45px;">
+        <img src="../../assets/chart2.png" class="chart">
+      </mat-grid-tile>
+    </mat-grid-list>
+    </div>
+    <div class="nextview" >
+  
+    <mat-grid-list cols="4" rowHeight="320px"  gutterSize="20px">
+      <mat-grid-tile style="border-radius: 45px;">1</mat-grid-tile>
+      <mat-grid-tile style="border-radius: 45px;">2</mat-grid-tile>
+      <mat-grid-tile style="border-radius: 45px;">3</mat-grid-tile>
+      <mat-grid-tile style="border-radius: 45px;">4</mat-grid-tile>
+    </mat-grid-list>
+    
+  
+</div>
+  
 </mat-drawer-container>

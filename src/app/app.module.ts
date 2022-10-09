@@ -37,6 +37,8 @@ import { MatSortModule } from '@angular/material/sort';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTreeModule} from '@angular/material/tree';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 @NgModule({
   declarations: [
@@ -50,6 +52,7 @@ import {MatTreeModule} from '@angular/material/tree';
     AddEmployeeComponent
   ],
   imports: [
+    MatGridListModule,
     MatTreeModule,
     MatSidenavModule,
     MatSnackBarModule,

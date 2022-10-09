@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 import { EmployeeComponent } from '../employee/employee.component';
+import { ApiService } from '../services/api.service';
 
 
 @Component({
@@ -8,12 +11,20 @@ import { EmployeeComponent } from '../employee/employee.component';
   styleUrls: ['./dashbord.component.scss']
 })
 export class DashbordComponent implements OnInit {
+ 
   showFiller = false;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
    
   }
+  loggedin(){
+    return localStorage.getItem('token');
+    }
+    onLogout(){
+     localStorage.removeItem('token')
+      this.router.navigate(['Login']);
+    }
   
 
 

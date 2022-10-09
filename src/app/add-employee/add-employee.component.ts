@@ -11,7 +11,7 @@ import { InjectFlags } from '@angular/compiler/src/core';
 })
 
 export class AddEmployeeComponent implements OnInit {
-  lpa!:number;
+  
   jobTitle: any;
   employeeform!:FormGroup;
   ActionBtn:string="Save"
